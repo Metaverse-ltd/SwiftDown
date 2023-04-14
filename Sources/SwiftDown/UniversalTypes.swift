@@ -8,15 +8,15 @@
 import Foundation
 
 #if os(iOS)
-  import UIKit
-  typealias UniversalColor = UIColor
-  typealias UniversalFont = UIFont
-  typealias UniversalFontDescriptor = UIFontDescriptor
-  typealias UniversalTraits = UIFontDescriptor.SymbolicTraits
+import UIKit
+public typealias UniversalColor = UIColor
+public typealias UniversalFont = UIFont
+public typealias UniversalFontDescriptor = UIFontDescriptor
+public typealias UniversalTraits = UIFontDescriptor.SymbolicTraits
 #elseif os(macOS)
-  import AppKit
-  typealias UniversalColor = NSColor
-  typealias UniversalFont = NSFont
-  typealias UniversalFontDescriptor = NSFontDescriptor
-  typealias UniversalTraits = NSFontDescriptor.SymbolicTraits
+import AppKit
+public typealias UniversalColor = NSColor
+public typealias UniversalFont = NSFont
+public typealias UniversalFontDescriptor = NSFontDescriptor
+public typealias UniversalTraits = NSFontDescriptor.SymbolicTraits
 #endif

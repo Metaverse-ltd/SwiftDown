@@ -8,11 +8,11 @@
 #if os(iOS)
 import UIKit
 
-class SwiftDownHighligther {
+public class SwiftDownHighligther {
   weak var textView: UITextView?
 
   /// - param textView: The text view which should be observed and highlighted.
-  init(textView: UITextView?) {
+  public init(textView: UITextView?) {
     self.textView = textView
     applyStyles()
   }
